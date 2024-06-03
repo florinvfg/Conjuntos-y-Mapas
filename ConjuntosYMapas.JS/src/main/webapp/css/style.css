@@ -1,0 +1,81 @@
+.contenedor {
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    background-color: #eaa7a7; /* Color de fondo */
+    padding: 50px; /* Espaciado interno de 50px */
+    height: auto; /* Auto */
+    flex-direction: column; /* Organiza los elementos en una columna */
+}
+
+.contenedor1 {
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
+    background-color: #eaa7a7; /* Color de fondo */
+    padding: 50px; /* Espaciado interno de 50px */
+    height: auto; /* Altura fija de 400px */
+}
+
+body {
+    background-color: #afbcd7; /* Color de fondo */
+    font-family: Verdana; /* Fuente de texto */
+    height: 100vh; /* Altura del viewport completo */
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.boton {
+    padding: 10px 20px; /* Espaciado interno de 10px arriba/abajo y 20px izquierda/derecha */
+    background-color: #eaa7a7; /* Color de fondo */
+    color: #172ebd; /* Color del texto */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.boton:hover {
+    background-color: azure; /* Color de fondo al pasar el ratón */
+    color: darkslategrey; /* Color del texto al pasar el ratón */
+    cursor: pointer; /* Cambia el cursor a una mano apuntando */
+}
+
+.derecha {
+    text-align: right; /* Alinea el texto a la derecha */
+    padding-right: 20px; /* Espaciado interno a la derecha de 20px */
+}
+
+.izquierda {
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+.centrado {
+    text-align: center; /* Alinea el texto al centro */
+}
+
+.cajaFlex {
+    display: flex; /* Aplica el modelo de caja flexible */
+    margin: 10px 0; /* Margen de 10px arriba y abajo, 0 a los lados */
+}
+
+.cajaFlex1 {
+    display: flex; /* Aplica el modelo de caja flexible */
+    justify-content: space-around; /* Distribuye los elementos con espacio alrededor */
+}
+
+a {
+    text-decoration: none; /* Elimina el subrayado del texto del enlace */
+    border: 1px solid blue; /* Borde azul de 1px */
+}
+
+.margen-arriba {
+    margin-top: 50px; /* Margen superior de 50px */
+}
+.boton-letra{
+    width: 20px;
+}
+#contadorFallas{
+    color: black;
+}
+#salir,#nuevaP {
+    display: none;
+}
