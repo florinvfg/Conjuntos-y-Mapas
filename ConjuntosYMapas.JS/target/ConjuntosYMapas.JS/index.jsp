@@ -24,10 +24,15 @@
     </p>
     <p class="error"></p>
     <div class="contenedor col-12">
-    <table id="agenda"></table>
-    <tr>Nombre</tr>
-    <tr>Telefono</tr>
-        </div>
+
+    <table id="agenda">
+        <tr>
+    <th>Nombre</th>
+    <th>Telefono</th>
+        </tr>
+    </table>
+
+    </div>
 </div>
 
 </body>
