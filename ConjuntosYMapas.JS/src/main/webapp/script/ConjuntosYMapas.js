@@ -14,6 +14,7 @@ window.onload=function (){
     for (nombre of nombres){
         console.log(nombre);
     }
+
 /**
  * vamos hacer una agenda telefonica
  * para practicar los conjuntos
@@ -23,9 +24,10 @@ let agenda=new Set();
 let tabla=document.querySelector("#agenda");
 boton.addEventListener("click",function (){
     let nombre=document.querySelector("#nombre").value;
+    let apellido=document.querySelector("#apellido").value;
     let telefono=document.querySelector("#telefono").value;
     if (/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre.trim()) && telefono.match(/^\d{9}$/)){
-        agenda.add([nombre,telefono]);
+        agenda.add([nombre,apellido,telefono]);
         console.log(agenda);
 
         //agregar ese contacto a la tabla
@@ -36,15 +38,23 @@ boton.addEventListener("click",function (){
         celda1.classList.add("celda");
         celda1.textContent=nombre;
         tabla.appendChild(celda1);
-        //diseñar y crea la celda del telefono del contacto
+
         let celda2=document.createElement("td");
         celda2.classList.add("celda");
-        celda2.textContent=telefono;
+        celda2.textContent=apellido;
         tabla.appendChild(celda2);
+        //diseñar y crea la celda del telefono del contacto
+        let celda3=document.createElement("td");
+        celda3.classList.add("celda");
+        celda3.textContent=telefono;
+        tabla.appendChild(celda3);
 
     }else {
         document.querySelector(".error").textContent="Los datos de nombre y telefono son obligatorios!"
     }
+    document.querySelector("#nombre").value="";
+    document.querySelector("#apellido").value="";
+    document.querySelector("#telefono").value="";
 })
 
 }

@@ -17,6 +17,10 @@
     <h2>Agenda Telefonica</h2>
     <label for="nombre">Nombre</label>
     <input type="text" id="nombre">
+
+    <label for="apellido">Apellido</label>
+    <input type="text" id="apellido">
+
     <label for="telefono">Telefono</label>
     <input type="text" id="telefono" maxlength="9">
     <p>
@@ -27,8 +31,9 @@
 
     <table id="agenda">
         <tr>
-    <th>Nombre</th>
-    <th>Telefono</th>
+            <th>Nombre😉</th>
+            <th>Apellido😉</th>
+            <th>Telefono😉</th>
         </tr>
     </table>
 
