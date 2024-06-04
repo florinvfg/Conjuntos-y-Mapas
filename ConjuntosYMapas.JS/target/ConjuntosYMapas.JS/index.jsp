@@ -14,6 +14,19 @@
 <body>
 <div class="contenedor col-8" >
     <h1>Conjuntos y Mapas</h1>
+    <h2>Agenda Telefonica</h2>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre">
+    <label for="telefono">Telefono</label>
+    <input type="text" id="telefono" maxlength="9">
+    <p>
+        <button id="agregar" class="boton">+</button>
+    </p>
+    <div class="contenedor col-12">
+    <table id="agenda"></table>
+    <tr>Nombre</tr>
+    <tr>Telefono</tr>
+        </div>
 </div>
 
 </body>
