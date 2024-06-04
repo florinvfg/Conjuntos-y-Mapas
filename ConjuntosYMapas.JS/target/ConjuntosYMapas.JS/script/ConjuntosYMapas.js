@@ -55,6 +55,16 @@ boton.addEventListener("click",function (){
     document.querySelector("#nombre").value="";
     document.querySelector("#apellido").value="";
     document.querySelector("#telefono").value="";
+
+
+    console.log(agenda.size);//longitud del conjunto
+    let nombreBuscar="Irina";
+    if (agenda.has(nombreBuscar)){//buscar dentro de un conjunto
+        console.log("Encontrado");
+    }
+    else{
+        console.log("No existe");
+    }
 })
 
 }

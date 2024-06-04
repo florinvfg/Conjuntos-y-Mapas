@@ -26,6 +26,9 @@
     <p>
         <button id="agregar" class="boton">+</button>
     </p>
+    <p>
+        <button id="cambiarPagina" class="boton" onclick="window.location.href='index2.jsp'">Ir a Index2</button>
+    </p>
     <p class="error"></p>
     <div class="contenedor col-12">
 
