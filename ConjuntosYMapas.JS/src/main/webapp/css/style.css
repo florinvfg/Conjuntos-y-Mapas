@@ -79,3 +79,9 @@ a {
 #salir,#nuevaP {
     display: none;
 }
+#tabla,th,td{
+    border: 1px dotted darkblue;
+}
+#tabla{
+
+}
