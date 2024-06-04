@@ -18,8 +18,16 @@ window.onload=function (){
  * para practicar los conjuntos
  * */
 let boton=document.querySelector(".boton");
+let agenda=new Set();
 boton.addEventListener("click",function (){
-    alert("vamos a agregar");
+    let nombre=document.querySelector("#nombre").value;
+    let telefono=document.querySelector("#telefono").value;
+    if (/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(nombre.trim()) && telefono.match(/^\d{9}$/)){
+        agenda.add([nombre,telefono]);
+        console.log(agenda);
+    }else {
+        document.querySelector(".error").textContent="Los datos de nombre y telefono son obligatorios!"
+    }
 })
 
 }

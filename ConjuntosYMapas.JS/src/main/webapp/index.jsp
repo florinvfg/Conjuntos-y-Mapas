@@ -22,6 +22,7 @@
     <p>
         <button id="agregar" class="boton">+</button>
     </p>
+    <p class="error"></p>
     <div class="contenedor col-12">
     <table id="agenda"></table>
     <tr>Nombre</tr>
